@@ -32,6 +32,7 @@
 .nave ul {
     display: flex;
     width: 350px;
+    position: relative;
 }
 
 .nave ul li {
@@ -63,7 +64,7 @@
     color: var(--clr);
 }
 
-.nave ul li:hover a .icon {
+.nave ul li.active a .icon {
     transform: translateY(-35px);
 }
 
@@ -78,9 +79,20 @@
     transform: translateY(20px);
 }
 
-.nave ul li:hover a .text {
+.nave ul li.active a .text {
     opacity: 1;
     transform: translateY(10px);
+}
+
+.indicador {
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background: #29fd;
+    border-radius: 50%;
+    border: 6px solid var(--clr);
+    transition: .5s;
 }
 
 
