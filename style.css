@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+:root {
+    --clr: #222327;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr);
+}
+
+.nave {
+    width: 400px;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.nave ul {
+    display: flex;
+    width: 350px;
+}
+
+.nave ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.nave ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nave ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: .5s;
+    color: var(--clr);
+}
+
+.nave ul li:hover a .icon {
+    transform: translateY(-35px);
+}
+
+.nave ul li a .text {
+    position: absolute;
+    color: var(--clr);
+    font-weight: bold;
+    font-size: .75rem;
+    letter-spacing: .05rem;
+    transition: .5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.nave ul li:hover a .text {
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+
+
+
+
+
