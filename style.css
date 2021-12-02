@@ -89,12 +89,35 @@
     top: -50%;
     width: 70px;
     height: 70px;
-    background: #29fd;
+    background: rgb(34, 152, 255);
     border-radius: 50%;
     border: 6px solid var(--clr);
     transition: .5s;
 }
 
+.indicador::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -10px 0 0 var(--clr);
+}
+
+.indicador::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: 0 -10px 0 0 var(--clr);
+}
 
 
 
